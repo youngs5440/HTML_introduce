@@ -19,33 +19,37 @@
      margin:0;
      padding:20px;
  }
- ol{
+ #grid ol{
      border-right:1px solid gray;
      width:100px;
      margin:0;
      padding:20px;
+     padding-left:33px;
  }
-.saw {
-    color:gray;
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
 }
-.active{
-    color:red;
+#article{
+    padding-left:25px;
 }
 
 </style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
- <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class="saw active">CSS</a></li>
+ <div id="grid">
+    <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
     <li><a href="3.html">JavaScript</a></li> 
 </ol>
 
-
-<h2>CSS</h2>
-
-<p> Hello </p>
+<div id="article">
+    <h2>CSS</h2>
+    <p> Hello </p>
+</div>
+</div>
 <p>
     <div id="disqus_thread"></div>
 <script>
