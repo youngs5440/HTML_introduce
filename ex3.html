@@ -3,54 +3,87 @@
 
 <head>
     <style>
-      .js{
-          font-weight: bold;
-          color:red;
-      }
-      #first{
-          color:green;
-      }  
-    </style>
-<title> WEB1 - html </title>
-<meta charset="utf-8">
+        .js {
+            font-weight: bold;
+            color: red;
+        }
 
-<link rel="stylesheet" href="style.css">
+        #first {
+            color: green;
+        }
+    </style>
+    <title> WEB1 - html </title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <h1><a href="index.html">WEB</a></h1>
-    <div id="grid">
- <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html" style="color:red;text-decoration:underline">JavaScript</a></li> 
-</ol>
-<div id="article">
-<h2 style="background-color:coral; color:powderblue">JavaScript</h2>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+ 
+ document.querySelector('body').style.backgro
+    undColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+if(this.value === 'night'){
+target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+} else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+    }
+    ">
 
-<span id="first" class="js">Hi</span> egojpeogqcmas<span class="js">Hi</span>qispfoaposf<span class="js">Hi</span>wopm
-</div>
-</div>
-<p>
+
+
+
+
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html" style="color:red;text-decoration:underline">JavaScript</a></li>
+        </ol>
+        <div id="article">
+            <h2 style="background-color:coral; color:powderblue">JavaScript</h2>
+
+            <span id="first" class="js">Hi</span> egojpeogqcmas<span class="js">Hi</span>qispfoaposf<span
+                class="js">Hi</span>wopm
+        </div>
+    </div>
+    <p>
     <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://test-b4a6xeb0d1.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://test-b4a6xeb0d1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+    </p>
+    Hello World
 </body>
+
 </html>
