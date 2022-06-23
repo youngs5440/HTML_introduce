@@ -15,34 +15,38 @@
     <title> WEB1 - html </title>
     <meta charset="utf-8">
 <script>
-    function linkssetColor(color){
+    var Links = {
+        setColor:function(color){
         var alist = document.querySelectorAll('a');
 var i = 0;
 while( i< alist.length){
     alist[i].style.color ='color';
     i=i+1;
     }
-}
-function BodySetColor(color){
+} 
+    }
+var Body = {
+    setColor:function (color){
     document.queryselector('body').style.color = color;
-}
-function BodySetBackgroundColor(color){
+},
+SetBackgroundColor:function (color){
     document.querySelector('body').style.backgroundColor = 'color';
+}
 }
 function nightDayHandler(self){
 var target = document.querySelector('body');
 if(self.value === 'night'){
-BodySetBackgroundColor = ('black');
-    BodySetColor = ('white');
+Body.SetBackgroundColor = ('black');
+    Body.setColor = ('white');
     self.value = 'day';
 
 
-setColor('powderblue');
+Links.setColor('powderblue');
 }
 
  else  {
-        BodySetBackgroundColor = 'white';
-        BodySetColor = 'black';
+        Body.SetBackgroundColor = 'white';
+        Body.setColor = 'black';
         self.value = 'night';
 Links.setColor('blue');
 }
@@ -55,8 +59,8 @@ Links.setColor('blue');
 <body>
 
     <h1><a href="index.html">WEB</a></h1>
-    <input type="button" value="night" onclick="
-    nightDayHandler(this)
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
     ">
 
 
